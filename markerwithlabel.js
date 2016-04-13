@@ -3,7 +3,6 @@
  * @version 1.1.10 [April 8, 2014]
  * @author Gary Little (inspired by code from Marc Ridey of Google).
  * @copyright Copyright 2012 Gary Little [gary at luxcentral.com]
- * @lastedit Christian Yaglenski
  * @fileoverview MarkerWithLabel extends the Google Maps JavaScript API V3
  *  <code>google.maps.Marker</code> class.
  *  <p>
@@ -17,6 +16,12 @@
  *  original position by pressing the <code>Esc</code> key. This doesn't work if you drag the marker
  *  itself because this feature is not (yet) supported in the <code>google.maps.Marker</code> class.
  */
+
+ /*
+  * Last Edited Christian Yaglenski
+  * Fixed bug that caused labels to hover over the markers, rather than be tied to the markers.
+  * This prevents labels from overlapping/mixing with each other when pins are too close.
+  */
 
 /*!
  *
